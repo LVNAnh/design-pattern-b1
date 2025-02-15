@@ -20,14 +20,6 @@ class Database {
           }
         );
 
-        mongoose.connection.on("connected", () => {
-          console.log("Mongoose default connection is open");
-        });
-
-        mongoose.connection.on("error", (err) => {
-          console.error("Mongoose connection error:", err);
-        });
-
         console.log("Connected to MongoDB");
       } catch (error) {
         console.error("Connect to MongoDB failure:", error.message);

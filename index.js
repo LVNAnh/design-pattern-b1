@@ -1,6 +1,6 @@
 const express = require("express");
-const mongoDB = require("./database/mongo.db");
-const userRoutes = require("./routes/user.routes");
+const mongoDB = require("./src/database/mongo.db");
+const userRoutes = require("./src/routes/user.routes");
 
 const app = express();
 const PORT = 3000;
